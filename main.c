@@ -5,9 +5,11 @@
 
 int main() {
 
-    char quadro[MAX_LINHAS][MAX_COLUNAS];
-    criaQuadro();
+    //char quadro[MAX_LINHAS][MAX_COLUNAS];
+    //criaQuadro();
     //imprimeQuadro(quadro);
+
+    Asterisco(5);
 
     return 0;
 }

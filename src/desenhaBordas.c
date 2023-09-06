@@ -18,9 +18,9 @@ void imprimeQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])
     getchar();
 }
 
-char criaQuadro()
+char criaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])
 {
-    char quadro[MAX_LINHAS][MAX_COLUNAS];
+    //char quadro[MAX_LINHAS][MAX_COLUNAS];
 
     for(int i = 0; i < MAX_COLUNAS; i++){
         quadro[0][i] = '-';
@@ -36,8 +36,8 @@ char criaQuadro()
         }
     }
 
-    imprimeQuadro(quadro);
+    //imprimeQuadro(quadro);
 
-    //return quadro[MAX_LINHAS][MAX_COLUNAS];
+    return quadro[MAX_LINHAS][MAX_COLUNAS];
 }
 

@@ -7,7 +7,7 @@
 #define MAX_LINHAS 20
 
 void imprimeQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS]);
-char criaQuadro();
+char criaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS]);
 void Menu();
 
 void Asterisco(int qtd);
@@ -17,3 +17,4 @@ void Todos(int qtd);
 void especial(int qtd);
 
 int getQTD();
+void setPosicao(int *x, int *y);
