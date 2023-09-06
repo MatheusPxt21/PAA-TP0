@@ -6,6 +6,14 @@
 #define MAX_COLUNAS 80
 #define MAX_LINHAS 20
 
-int Menu();
+void imprimeQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS]);
+char criaQuadro();
+void Menu();
 
-void desenhaBordas();
+void Asterisco(int qtd);
+void Soma(int qtd);
+void X(int qtd);
+void Todos(int qtd);
+void especial(int qtd);
+
+int getQTD();
