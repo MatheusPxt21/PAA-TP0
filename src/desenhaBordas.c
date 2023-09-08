@@ -6,22 +6,17 @@ void imprimeQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])
     for (int i = 0; i < MAX_LINHAS; i++) {
         for (int j = 0; j < MAX_COLUNAS; j++) {
             if (quadro[i][j] == '\0') {
-                break; // Interrompa a impressão após o último caractere legível
+                break;
             }
-            printf("%c", quadro[i][j]);
+            printf("%s%c%s", CYAN, quadro[i][j], RESET);
         }
         printf("\n");
     }
     printf("\n\n");
-    // getchar();
-    printf("Pressione uma tecla para continuar!\n");
-    getchar();
 }
 
 char criaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])
 {
-    //char quadro[MAX_LINHAS][MAX_COLUNAS];
-
     for(int i = 0; i < MAX_COLUNAS; i++){
         quadro[0][i] = '-';
         quadro[MAX_LINHAS-1][i] = '-';
@@ -35,8 +30,6 @@ char criaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])
             quadro[i][j] = ' ';
         }
     }
-
-    //imprimeQuadro(quadro);
 
     return quadro[MAX_LINHAS][MAX_COLUNAS];
 }
