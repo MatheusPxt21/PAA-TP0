@@ -18,7 +18,8 @@ void Soma(int qtd);
 void desenhaX(char quadro[MAX_LINHAS][MAX_COLUNAS], int qtd);
 void X(int qtd);
 void Todos(int qtd);
-void especial(int qtd);
+void desenhaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS], int qtd);
+void Quatro(int qtd);
 
 int getQTD();
 void setPosicao(int *x, int *y);

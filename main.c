@@ -1,31 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "headers/cabecalhos.h"
-
-
-
-
 
 int main() {
 
-    srand(time(NULL));
-    //printf("HELLO");
-    //char quadro[MAX_LINHAS][MAX_COLUNAS];
-    //criaQuadro();
-    //imprimeQuadro(quadro);
-    //printf("oi");
+  srand(time(NULL));
 
-    //Asterisco(10);
+  int res = 1;
 
-    //Soma(10);
+  while(res == 1){
 
-  //  X(10);
+    Menu();
+    
+    printf("%sDeseja voltar ao Menu?%s", RED, RESET);
+    printf("\n%s%s[1]%s - SIM %s%s || %s%s[2]%s - NAO%s%s  ", B_GREEN, CYAN, WHITE, RESET, BLACK, B_RED, WHITE, WHITE, RESET, RESET);
+    setbuf(stdout, 0);
+    scanf("%d", &res);
+    setbuf(stdin, 0);
+  } 
 
-    Todos(3);
-
-//    especial(5);
-
-    return 0;
+  return 0;
 }
 
