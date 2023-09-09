@@ -21,7 +21,4 @@ void Todos(int qtd);
 void desenhaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS], int qtd);
 void Quatro(int qtd);
 
-int getQTD();
 void setPosicao(int *x, int *y);
-
-void desenhaSinalMais(char quadro[MAX_LINHAS][MAX_COLUNAS]);
