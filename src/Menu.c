@@ -7,6 +7,7 @@ void Menu()
     printf("\n\t%s          GERADOR DE OBRA DE ARTE:                 %s",B_YELLOW, RESET);
     printf("\n\t%s===================================================%s", B_YELLOW, RESET);
     printf("\n\t%s|| Escolha a figura que deseja ver representada: ||%s", B_GREEN, RESET);
+    printf("\n\t|| %s0 - Sair                                      %s||", RED, RESET);
     printf("\n\t|| %s1 - Asterisco simples                         %s||", CYAN, RESET);
     printf("\n\t|| %s2 - Síbolo de soma composto por asteriscos    %s||", CYAN, RESET);
     printf("\n\t|| %s3 - Letra X feita com asteriscos              %s||", CYAN, RESET);
@@ -17,6 +18,9 @@ void Menu()
     printf("\n\t  ");
     scanf("%d", &figura);
     setbuf(stdin, 0);
+    if(figura == 0){
+        return;
+    }
 
     printf("\n\t%s          INSIRA A QUANTIDADE DE FIGURAS:          %s", B_YELLOW, RESET);
     printf("\n\t%s|| Atente-se aos limites de cada figura:         ||%s", B_GREEN, RESET);
