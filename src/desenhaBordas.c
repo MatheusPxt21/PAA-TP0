@@ -12,7 +12,7 @@ void imprimeQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])
         }
         printf("\n");
     }
-    //printf("\n\n");
+
 }
 
 char criaQuadro(char quadro[MAX_LINHAS][MAX_COLUNAS])

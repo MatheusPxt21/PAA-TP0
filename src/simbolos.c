@@ -69,7 +69,6 @@ void Soma(int qtd)
 
         printf("%sQuadro criado:%s SOMA%s || %sQuantidade:%s %d%s", BLUE, YELLOW, BLACK, BLUE, YELLOW, qtd, RESET);
 
-
         printf("%s\nDeseja criar um novo quadro com %sas mesmas configuracoes%s?%s", CYAN, YELLOW, CYAN, RESET);
         printf("\n%s%s[1]%s - SIM %s%s || %s%s[2]%s - NAO%s%s  ", B_GREEN, CYAN, WHITE, RESET, BLACK, B_RED, WHITE, WHITE, RESET, RESET);
         setbuf(stdout, 0);
@@ -121,7 +120,6 @@ void X(int qtd)
 
         printf("%sQuadro criado:%s X%s || %sQuantidade:%s %d%s", BLUE, YELLOW, BLACK, BLUE, YELLOW, qtd, RESET);
 
-
         printf("%s\nDeseja criar um novo quadro com %sas mesmas configuracoes%s?%s", CYAN, YELLOW, CYAN, RESET);
         printf("\n%s%s[1]%s - SIM %s%s || %s%s[2]%s - NAO%s%s  ", B_GREEN, CYAN, WHITE, RESET, BLACK, B_RED, WHITE, WHITE, RESET, RESET);
         setbuf(stdout, 0);
@@ -133,9 +131,7 @@ void X(int qtd)
 void Todos(int qtd)
 {
     char quadro[MAX_LINHAS][MAX_COLUNAS];
-
     int res = 1;
-    int pos[2];
 
     while(res == 1) 
     {   
@@ -273,7 +269,6 @@ void Quatro(int qtd)
     }
 
     int res = 1;
-    int pos[2];
 
     while(res == 1){
         criaQuadro(quadro);
